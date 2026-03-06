@@ -1,0 +1,29 @@
+.about-content {
+  max-width: 65%;
+  margin: auto;
+}
+
+.about-content h3 {
+  padding: 12px 0;
+  font-weight: 600;
+  opacity: 0.15;
+  transform: translateY(8px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  opacity: 0.15;
+  transform: translateY(8px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    max-width: 90%;
+  }
+}

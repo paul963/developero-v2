@@ -1,0 +1,14 @@
+.outsourcing .description {
+  max-width: 65%;
+  margin: auto;
+}
+
+.outsourcing .description p {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .outsourcing .description {
+    max-width: 100%;
+  }
+}

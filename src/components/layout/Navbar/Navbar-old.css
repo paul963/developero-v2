@@ -1,0 +1,48 @@
+.navigation {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation > div {
+  max-width: 70%;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: var(--secondary);
+}
+
+.menu a:hover {
+  color: var(--grey);
+}
+
+.menu a.menu-btn {
+  padding: 6px 12px;
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: var(--border-radius);
+  font-size: 15px;
+  color: var(--primary);
+}
+
+.menu a.menu-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--secondary);
+}

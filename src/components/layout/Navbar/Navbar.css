@@ -1,0 +1,102 @@
+/* ===== Nav wrapper ===== */
+.nav-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 200;
+}
+
+/* ===== Hamburger ===== */
+.hamburger {
+  position: relative;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--secondary);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.is-open {
+  background: transparent;
+  border-color: transparent;
+}
+
+.hamburger.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  background: var(--secondary);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  background: var(--secondary);
+}
+
+/* ===== Menu ===== */
+.nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px 60px 25px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(241, 245, 249, 0.12);
+  border-radius: 20px;
+  transform: scale(0);
+  transform-origin: top left;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.nav-menu.is-open {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-menu a {
+  color: var(--secondary);
+  font-size: 18px;
+  text-wrap: nowrap;
+}
+
+.nav-menu a:hover {
+  color: var(--grey);
+}
+
+/* ===== Backdrop ===== */
+/* .menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+} */
