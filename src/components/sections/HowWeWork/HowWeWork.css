@@ -1,16 +1,98 @@
-.how-we-work .animate {
+/* ===== Process entry ===== */
+.process .container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.process .process-content {
+  width: 60%;
+}
+
+.process .supra-title {
+  margin: 0 0 10px;
+}
+
+.process .btn-wrapper {
+  padding-top: 60px;
+}
+
+.process .supra-title, .process h2, .process p {
   opacity: 0;
+}
+
+.process .animate {
   animation: heroFadeUp 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: var(--delay, 0s);
 }
 
-.how-we-work .description {
-  max-width: 75%;
-  margin: 0 auto;
-  padding-bottom: 60px;
-  font-size: 2em;
+.process-carousel {
+  width: 40%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  gap: 40px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
 }
 
+.process-carousel .carousel-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.process-carousel .carousel-col img {
+  filter: grayscale(1);
+}
+
+.process-carousel:hover img {
+  filter: grayscale(0);
+}
+
+.process-carousel .scroll-up.slow {
+  animation: scrollUp 60s linear infinite;
+}
+.process-carousel .scroll-up.fast {
+  animation: scrollUp 60s linear infinite;
+}
+.process-carousel .scroll-down.normal {
+  animation: scrollDown 60s linear infinite;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-500%);
+  }
+}
+
+@keyframes scrollDown {
+  from {
+    transform: translateY(-500%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .process .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .process .process-content,
+  .process-carousel {
+    width: 100%;
+  }
+}
+
+/* ===== Process cards ===== */
 .work-item {
   position: relative;
   padding: 30px;
@@ -46,11 +128,4 @@
   padding: 15px;
   background: rgba(241, 245, 249, 0.15);
   border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .how-we-work .description {
-    max-width: 100%;
-    font-size: 1.5em;
-  }
 }

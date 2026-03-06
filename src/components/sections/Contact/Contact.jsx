@@ -99,7 +99,6 @@ const Contact = () => {
               <option value="website">Site de Prezentare</option>
               <option value="eccommerce">Magazin Online</option>
               <option value="infrastructure">Infrastructură IT</option>
-              <option value="outsourcing">Externalizare Servicii IT</option>
               <option value="lp">Landing Page</option>
               <option value="audit">Audit extern</option>
               <option value="maintenance">Mentenanță</option>

@@ -76,50 +76,58 @@ const Web = () => {
             <div className={`tab-panel-item ${activeTab === 0 ? "active" : ""}`}>
               <div className="grid grid-3">
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 0 }}>
-                  <h3 className="tab-title">
-                    <span>Start</span>
-                    <span>1.200€</span>
-                  </h3>
+                  <h3 className="tab-title">Start</h3>
+                  <p className="tab-description">Ideal pentru un start al proiectului tău sau un redesign complet.</p>
+                  <p className="tab-price"><span>de la</span> 1.200€</p>
                   <div className="tab-list">
-                    <p>Implementare completă a site-ului, cu design modern, pregătit să inspire încredere.</p>
-                    <p>Consultanță în achiziționarea de server și domeniu astfel încât să alegi cea mai bună variantă.</p>
-                    <p>Configurare SSL pentru securitate.</p>
-                    <p>Creare și configurare adrese de email.</p>
-                    <p>SEO inițial pentru vizibilitate în Google (MT, MD, Sitemap, ...).</p>
-                    <p>Ne asigurăm că ai toate paginile de politici conforme GDPR.</p>
-                    <p>Backup lunar pentru siguranța datelor.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Implementare site.
+                    </p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Consultanță tehnică.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Configurare SEO inițial.</p>
                   </div>
                   <a href="#contact" className="btn-full" data-service="website">
                     Cere oferta
                   </a>
                 </div>
                 <div className="grid-item tab-content bg-dark highlight" style={{ "--item-index": 1 }}>
-                  <h3 className="tab-title">
-                    <span>Business</span>
-                    <span>1.500€</span>
-                  </h3>
+                  <h3 className="tab-title">Business</h3>
+                  <p className="tab-description">Destinat site-urilor pentru mai mult control si securitate avansată.</p>
+                  <p className="tab-price"><span>de la</span> 1.500€</p>
                   <div className="tab-list">
-                    <p>Tot ce conține pachetul Esențial, plus:</p>
-                    <p>Protecție avansată împotriva atacurilor (WAF).</p>
-                    <p>SEO avansat pentru a putea urmări conversiile (GTM Pixel, Facebook Pixel, Google Ads, ...).</p>
-                    <p>Integrare cu platforme de Newsletter.</p>
-                    <p>BONUS: 1 lună mentenanță gratuită.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Securitate avansată.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Integrare Newsletter.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      BONUS 2 luni mentenanță gratuită.</p>
                   </div>
                   <a href="#contact" className="btn-full" data-service="website">
                     Cere oferta
                   </a>
                 </div>
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 2 }}>
-                  <h3 className="tab-title">
-                    <span>Pro</span>
-                    <span>1.800€</span>
-                  </h3>
+                  <h3 className="tab-title">Pro</h3>
+                  <p className="tab-description">Conceput pentru scalabilitate, infrastructură dedicată și integrare AI.</p>
+                  <p className="tab-price"><span>de la</span> 1.800€</p>
                   <div className="tab-list">
-                    <p>Tot ce conține pachetul Profesional, plus:</p>
-                    <p>Live AI Chat.</p>
-                    <p>Viteză superioară prin Cloudflare (Cache, CDN, ...).</p>
-                    <p>Monitorizare uptime 24/7 pentru a ști la orice oră starea site-ului.</p>
-                    <p>BONUS: 2 luni mentenanță gratuită.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Monitorizare uptime 24/7.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Configurare server Cloudflare.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      BONUS 3 luni mentenanță gratuită.</p>
                   </div>
                   <a href="#contact" className="btn-full" data-service="website">
                     Cere oferta
@@ -132,54 +140,66 @@ const Web = () => {
             <div className={`tab-panel-item ${activeTab === 1 ? "active" : ""}`}>
               <div className="grid grid-3">
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 0 }}>
-                  <h3 className="tab-title">
-                    <span>Launch</span>
-                    <span>2.500€</span>
-                  </h3>
+                  <h3 className="tab-title">Launch</h3>
+                  <p className="tab-description">Un proiect mic in lumea E-Commerce, dar un proiect mare pentru tine.</p>
+                  <p className="tab-price"><span>de la</span> 2.500€</p>
                   <div className="tab-list">
-                    <p>Consultanță în alegerea platformei optime pentru magazinul tău online (WordPress sau Shopify).</p>
-                    <p>Configurare procesator de plată online.</p>
-                    <p>Configurare metodă de transport prin curier.</p>
-                    <p>Configurare metodă de facturare.</p>
-                    <p>SEO inițial pentru vizibilitate în Google (MT, MD, Sitemap, ...).</p>
-                    <p>Ne asigurăm că ai toate paginile de politici conforme GDPR.</p>
-                    <p>Import produse (până la 25 de produse gratuite).</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Consultanță pentru platformei potrivite.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Configurare inițială a magazinului.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Import produse.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Configurare SEO inițial.</p>
                   </div>
                   <a href="#contact" className="btn-full" data-service="eccommerce">
                     Cere oferta
                   </a>
                 </div>
                 <div className="grid-item tab-content bg-dark highlight" style={{ "--item-index": 1 }}>
-                  <h3 className="tab-title">
-                    <span>Grow</span>
-                    <span>2.800€</span>
-                  </h3>
+                  <h3 className="tab-title">Grow</h3>
+                  <p className="tab-description">Perfect pentru magazinele care doresc integrări si funcționalități suplimentare. </p>
+                  <p className="tab-price"><span>de la</span> 2.800€</p>
                   <div className="tab-list">
-                    <p>Tot ce conține pachetul Grow, plus:</p>
-                    <p>SEO avansat pentru a putea urmări conversiile (GTM Pixel, Facebook Pixel, Google Ads, ...).</p>
-                    <p>Configurare favorite.</p>
-                    <p>Protecție avansată împotriva atacurilor (WAF).</p>
-                    <p>Integrare cu platforme de Newsletter.</p>
-                    <p>Backup lunar pentru siguranța datelor.</p>
-                    <p>Import produse (până la 50 de produse gratuite).</p>
-                    <p>BONUS: 1 lună mentenanță gratuită.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Căutare avansată produse.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      SEO avansat și tracking.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Backup lunar al datelor.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      BONUS 2 luni mentenanță gratuită.</p>
                   </div>
                   <a href="#contact" className="btn-full" data-service="eccommerce">
                     Cere oferta
                   </a>
                 </div>
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 2 }}>
-                  <h3 className="tab-title">
-                    <span>Scale</span>
-                    <span>3.200€</span>
-                  </h3>
+                  <h3 className="tab-title">Scale</h3>
+                  <p className="tab-description">Conceput pentru scalarea magazinului online prin încredere și securitate.</p>
+                  <p className="tab-price"><span>de la</span> 3.200€</p>
                   <div className="tab-list">
-                    <p>Configurare chatbot sau Live AI Chat.</p>
-                    <p>Viteză superioară prin Cloudflare (Cache, CDN, ...).</p>
-                    <p>Configurare Abandoned Cart pentru a notifica clienții care nu au finalizat achiziția.</p>
-                    <p>Monitorizare uptime 24/7 pentru a ști la orice oră starea magazinului tău online.</p>
-                    <p>Import produse (până la 100 de produse gratuite).</p>
-                    <p>BONUS: 2 luni mentenanță gratuită.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Chat AI.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Securitate de nivel înalt.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Monitorizare parametrii suplimentari.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      BONUS 3 luni mentenanță gratuită.</p>
                   </div>
                   <a href="#contact" className="btn-full" data-service="eccommerce">
                     Cere oferta
@@ -192,31 +212,70 @@ const Web = () => {
             <div className={`tab-panel-item ${activeTab === 2 ? "active" : ""}`}>
               <div className="grid grid-3">
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 0 }}>
-                  <h3 className="tab-title">Audit extern</h3>
-                  <p>
-                    Analiză completă a website-ului tău din perspectivă funcțională, tehnică și vizuală. Identificăm problemele care afectează performanța, viteza sau experiența utilizatorului și
-                    oferim recomandări clare pentru optimizare și creștere.
-                  </p>
+                  <h3 className="tab-title">Audit website / magazin</h3>
+                  <div className="tab-list">
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Audit tehnic.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Audit design.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Identificare probleme de performanță.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Testare completă pentru experiența utilizatorului.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Recomandări funcționalități extra.</p>
+                  </div>
                   <a href="#contact" className="btn-full" data-service="audit">
                     Cere oferta
                   </a>
                 </div>
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 1 }}>
                   <h3 className="tab-title">Landing Page</h3>
-                  <p>
-                    Crearea de pagini dedicate pentru campanii de marketing, produse prmoționale sau servicii premium. Structură oriectată cătrel call-to-action, design modern și elemente optimizate
-                    pentru a atrage vizitatorii.
-                  </p>
+                  <div className="tab-list">
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Pagini dedicate pentru campanii de marketing.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Pagini dedicate pentru lansare produse sau produse promoționale.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Structură oriectată către call-to-action.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Design modern și elemente optimizate.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Opțiuni multiple de conversie a clienților.</p>
+                  </div>
                   <a href="#contact" className="btn-full" data-service="lp">
                     Cere oferta
                   </a>
                 </div>
                 <div className="grid-item tab-content bg-dark" style={{ "--item-index": 2 }}>
                   <h3 className="tab-title">Mentenanță lunară</h3>
-                  <p>
-                    Administrare continuă a website-ului sau magazinului tău online prin actualizări periodice, backup-uri regulate și modificări la cerere, astfel încât site-ul sau magazinul tău să
-                    rămână funcțional și mereu pregătit să genereze vânzări.
-                  </p>
+                  <div className="tab-list">
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Administrarea site-ului sau magazinului online.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Backup lunar.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Actualizări periodice.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Modificări la cerere.</p>
+                    <p>
+                      <svg fill="none" viewBox="0 0 24 24" height="24" width="24"><g><path id="Vector 2356" stroke="#f1f5f9" d="m1.5 12.5 7 7 14 -14" stroke-width="1.5"></path></g></svg>
+                      Suport tehnic.</p>
+                  </div>
                   <a href="#contact" className="btn-full" data-service="maintenance">
                     Cere oferta
                   </a>
@@ -225,7 +284,6 @@ const Web = () => {
             </div>
           </div>
         </div>
-        <p className="disclaimer">* Prețurile sunt orientative și pot varia în funcție de complexitatea proiectului.</p>
       </div>
     </section>
   );
