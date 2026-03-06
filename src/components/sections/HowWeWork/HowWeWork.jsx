@@ -71,9 +71,9 @@ const HowWeWork = () => {
     <>
     <section className="how-we-work section-py" id="process">
       <div className="container">
-        <div className="supra-title">De la cerere la livrare</div>
-        <h2 className="text-center">Lucrăm <span className="glow-text">simplu</span> și <span className="glow-text">transparent</span></h2>
-        <p className="text-center description">
+        <div className="supra-title animate" style={{ '--delay': '0s' }}>De la cerere la livrare</div>
+        <h2 className="text-center animate" style={{ '--delay': '0.15s' }}>Lucrăm <span className="glow-text">simplu</span> și <span className="glow-text">transparent</span></h2>
+        <p className="text-center description animate" style={{ '--delay': '0.3s' }}>
           Ne dorim ca procesul să fie clar, eficient și lipsit de complicații. De la prima discuție până la implementare și suport, te ghidăm pas cu pas, astfel încât să ai control și vizibilitate în
           fiecare etapă.
         </p>

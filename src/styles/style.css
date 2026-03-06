@@ -106,7 +106,8 @@ a {
 }
 
 /* ===== Buttons ===== */
-.btn-full, .btn-outline {
+.btn-full,
+.btn-outline {
   padding: 14px 32px;
   color: var(--secondary);
   font-weight: 500;
@@ -133,6 +134,7 @@ a {
   .btn-full,
   .btn-outline {
     width: 100%;
+    display: block;
   }
 }
 

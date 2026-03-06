@@ -44,13 +44,16 @@
 
 .tab-content {
   position: relative;
+  padding: 30px 30px 120px;
   background: var(--primary);
   border: 1px solid rgba(241, 245, 249, .15);
   border-radius: var(--border-radius);
-  padding: 30px 30px 120px;
   color: var(--grey);
   transform: scale(.98);
   opacity: 0;
+}
+
+.tab-content.animate {
   animation: fadeUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: calc(var(--item-index, 0) * 0.15s);
 }
@@ -64,8 +67,8 @@
   position: absolute;
   inset: 0;
   background: radial-gradient(
-    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(255, 255, 255, 0.06),
+    500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.1),
     transparent 60%
   );
   opacity: 0;

@@ -4,16 +4,20 @@
 
 .infrastructure-content {
   padding: 30px;
-  border: 1px solid rgba(241, 245, 249, .15);
+  border: 1px solid rgba(241, 245, 249, 0.15);
   display: flex;
-  /* flex-direction: column; */
   align-items: flex-start;
   gap: 20px;
+  transform: scale(0);
+  opacity: 0;
+  transition:
+    transform 2s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 2s ease;
 }
 
-.infrastructure .grid:hover .infrastructure-content:not(:hover) {
-  opacity: .8;
-  filter: blur(1px);
+.infrastructure-content.visible {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .infrastructure-content .icon {
@@ -41,5 +45,9 @@
 @media (max-width: 768px) {
   .infrastructure-content {
     flex-direction: column;
+  }
+
+  .infrastructure-content .icon {
+    background: var(--secondary);
   }
 }

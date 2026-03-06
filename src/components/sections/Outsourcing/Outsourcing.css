@@ -1,14 +1,87 @@
-.outsourcing .description {
-  max-width: 65%;
-  margin: auto;
+.outsourcing .container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.outsourcing .outsourcing-content {
+  width: 60%;
+}
+
+.outsourcing .supra-title {
+  margin: 0 0 10px;
 }
 
 .outsourcing .description p {
   padding-bottom: 20px;
 }
 
+.outsourcing .btn-wrapper {
+  padding-top: 30px;
+}
+
+.outsourcing-carousel {
+  width: 40%;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  gap: 40px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.outsourcing-carousel .carousel-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.outsourcing-carousel .carousel-col img {
+  filter: grayscale(1);
+}
+
+.outsourcing-carousel:hover img {
+  filter: grayscale(0);
+}
+
+.outsourcing-carousel .scroll-up.slow {
+  animation: scrollUp 20s linear infinite;
+}
+.outsourcing-carousel .scroll-up.fast {
+  animation: scrollUp 20s linear infinite;
+}
+.outsourcing-carousel .scroll-down.normal {
+  animation: scrollDown 20s linear infinite;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
-  .outsourcing .description {
-    max-width: 100%;
+  .outsourcing .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .outsourcing .outsourcing-content,
+  .outsourcing-carousel {
+    width: 100%;
   }
 }

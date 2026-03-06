@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Infrastructure.css";
 
 const Infrastructure = () => {
+  useEffect(() => {
+    const items = document.querySelectorAll(".infrastructure-content");
+    if (!items.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    items.forEach((item) => observer.observe(item));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="infrastructure section-py" id="infrastructure">
       <div className="container">
@@ -60,27 +80,48 @@ const Infrastructure = () => {
             <div className="icon">
               <svg viewBox="0 0 24 24" height="24" width="24">
                 <g>
-                  <path d="M0.5 16a7.5 7.5 0 1 0 15 0 7.5 7.5 0 1 0 -15 0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="m1.5 6.5 4 0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M1.5 2 2.82 0.68A0.6 0.6 0 0 1 3.25 0.5a0.25 0.25 0 0 1 0.25 0.25V6.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M9.5 0.5a2 2 0 0 0 -2 2v2a2 2 0 0 0 4 0v-2a2 2 0 0 0 -2 -2" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="m13.5 6.5 4 0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M13.5 2 14.82 0.68a0.6 0.6 0 0 1 0.43 -0.18 0.25 0.25 0 0 1 0.25 0.25V6.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" ></path>
-                  <path d="M21.5 0.5a2 2 0 0 0 -2 2v2a2 2 0 0 0 4 0v-2a2 2 0 0 0 -2 -2" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                  <path d="M0.5 16a7.5 7.5 0 1 0 15 0 7.5 7.5 0 1 0 -15 0" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="m1.5 6.5 4 0" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M1.5 2 2.82 0.68A0.6 0.6 0 0 1 3.25 0.5a0.25 0.25 0 0 1 0.25 0.25V6.5" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M9.5 0.5a2 2 0 0 0 -2 2v2a2 2 0 0 0 4 0v-2a2 2 0 0 0 -2 -2" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="m13.5 6.5 4 0" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path
+                    d="M13.5 2 14.82 0.68a0.6 0.6 0 0 1 0.43 -0.18 0.25 0.25 0 0 1 0.25 0.25V6.5"
+                    fill="none"
+                    stroke="#000000"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
+                  ></path>
+                  <path d="M21.5 0.5a2 2 0 0 0 -2 2v2a2 2 0 0 0 4 0v-2a2 2 0 0 0 -2 -2" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
                   <g>
-                    <path d="m19.5 14.5 4 0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                    <path d="m19.5 10 1.32 -1.32a0.6 0.6 0 0 1 0.43 -0.18 0.25 0.25 0 0 1 0.25 0.25v5.75" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" ></path>
+                    <path d="m19.5 14.5 4 0" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                    <path
+                      d="m19.5 10 1.32 -1.32a0.6 0.6 0 0 1 0.43 -0.18 0.25 0.25 0 0 1 0.25 0.25v5.75"
+                      fill="none"
+                      stroke="#000000"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1"
+                    ></path>
                   </g>
-                  <path d="M17.22 13.52a2 2 0 0 0 0.28 -1v-2a2 2 0 0 0 -2 -2 1.7 1.7 0 0 0 -0.51 0.07" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" ></path>
-                  <path d="m15.5 22.5 2 0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="m15.5 21.5 0 1" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M21.5 16.5a2 2 0 0 0 -2 2v2a2 2 0 0 0 4 0v-2a2 2 0 0 0 -2 -2" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M7 11.5 7 13" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M9 11.5 9 13" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="m7 19.02 0 1.48" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="m9 19.02 0 1.48" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M11 14.5A1.5 1.5 0 0 1 9.5 16h-4v-3h4a1.5 1.5 0 0 1 1.5 1.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
-                  <path d="M11 17.5A1.5 1.5 0 0 1 9.5 19h-4v-3h4a1.5 1.5 0 0 1 1.5 1.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                  <path
+                    d="M17.22 13.52a2 2 0 0 0 0.28 -1v-2a2 2 0 0 0 -2 -2 1.7 1.7 0 0 0 -0.51 0.07"
+                    fill="none"
+                    stroke="#000000"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
+                  ></path>
+                  <path d="m15.5 22.5 2 0" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="m15.5 21.5 0 1" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M21.5 16.5a2 2 0 0 0 -2 2v2a2 2 0 0 0 4 0v-2a2 2 0 0 0 -2 -2" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M7 11.5 7 13" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M9 11.5 9 13" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="m7 19.02 0 1.48" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="m9 19.02 0 1.48" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M11 14.5A1.5 1.5 0 0 1 9.5 16h-4v-3h4a1.5 1.5 0 0 1 1.5 1.5" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
+                  <path d="M11 17.5A1.5 1.5 0 0 1 9.5 19h-4v-3h4a1.5 1.5 0 0 1 1.5 1.5" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1"></path>
                 </g>
               </svg>
             </div>

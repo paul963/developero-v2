@@ -17,7 +17,7 @@ const Hero = () => {
             De la site-ul de prezentare până la infrastructura serverelor tale – construim, securizăm și monitorizăm tot.
           </p>
           <div className="action hero-animate" style={{ '--delay': '0.45s' }}>
-            <a href="#services" className="btn-full">Vezi serviciile</a>
+            <a href="#web" className="btn-full">Vezi serviciile</a>
             <a href="#contact" className="btn-outline">Cere o ofertă</a>
           </div>
         </div>
