@@ -162,7 +162,7 @@
 
 @media (max-width: 768px) {
   .tab-header {
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
   }
   
