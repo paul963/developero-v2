@@ -11,6 +11,8 @@ const Web = () => {
 
   // Sliding indicator
   useEffect(() => {
+    if (window.innerWidth <= 768) return
+    
     const header = document.querySelector(".tab-header");
     if (!header) return;
     const activeItem = header.querySelectorAll(".tab-list-item")[activeTab];

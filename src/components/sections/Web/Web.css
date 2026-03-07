@@ -163,11 +163,15 @@
 @media (max-width: 768px) {
   .tab-header {
     max-width: 100%;
-    justify-content: flex-start;
-    overflow: auto;    
+    flex-direction: column;
   }
-
-  .tab-list-item {
-    text-wrap: nowrap;
+  
+  .tab-header .tab-list-item {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tab-header .tab-list-item.active {
+    background: var(--primary);
   }
 }
