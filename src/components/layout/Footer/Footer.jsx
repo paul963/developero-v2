@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className="contact-card">
               <p className="contact-card-title">Email</p>
-              <a href="mailto:developerosrl@gmail.com" className="contact-card-content">developerosrl@gmail.com</a>
+              <a href="mailto:hello@develope.ro " className="contact-card-content">hello@develope.ro </a>
             </div>
           </div>
         </div>

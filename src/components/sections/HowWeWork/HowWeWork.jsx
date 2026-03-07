@@ -3,13 +3,10 @@ import "./HowWeWork.css";
 
 const base = import.meta.env.BASE_URL;
 
-const col1Images = [`${base}assets/html.png`, `${base}assets/css.png`, `${base}assets/js.png`, `${base}assets/bootstrap.png`, `${base}assets/wordpress.png`, `${base}assets/shopify.png`];
-
-const col2Images = [`${base}assets/react.png`, `${base}assets/node.png`, `${base}assets/cisco.png`, `${base}assets/cloudflare.png`, `${base}assets/linux.png`, `${base}assets/nginx.png`];
-
-const col3Images = [`${base}assets/docker.png`, `${base}assets/kubernetes.png`, `${base}assets/tailscale.png`, `${base}assets/wireguard.png`, `${base}assets/openvpn.png`, `${base}assets/grafana.png`];
-
-// Duplicate each for seamless loop
+// Image carousel
+const col1Images = [`${base}assets/logo/html.png`, `${base}assets/logo/css.png`, `${base}assets/logo/js.png`, `${base}assets/logo/bootstrap.png`, `${base}assets/logo/wordpress.png`, `${base}assets/logo/shopify.png`];
+const col2Images = [`${base}assets/logo/react.png`, `${base}assets/logo/node.png`, `${base}assets/logo/cisco.png`, `${base}assets/logo/cloudflare.png`, `${base}assets/logo/linux.png`, `${base}assets/logo/nginx.png`];
+const col3Images = [`${base}assets/logo/docker.png`, `${base}assets/logo/kubernetes.png`, `${base}assets/logo/tailscale.png`, `${base}assets/logo/wireguard.png`, `${base}assets/logo/openvpn.png`, `${base}assets/logo/grafana.png`];
 const col1 = [...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images];
 const col2 = [...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images];
 const col3 = [...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images];
@@ -17,7 +14,10 @@ const col3 = [...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col
 const HowWeWork = () => {
   const sectionRef = useRef(null);
 
+  // Scroll cards efect
   useEffect(() => {
+    if (window.innerWidth <= 768) return
+    
     const section = sectionRef.current;
     if (!section) return;
 
@@ -80,6 +80,7 @@ const HowWeWork = () => {
     };
   }, []);
 
+  // Viewport entrance animation
   useEffect(() => {
     const animateEls = document.querySelectorAll(".process .supra-title, .process h2, .process p");
     if (!animateEls.length) return;
@@ -102,7 +103,8 @@ const HowWeWork = () => {
 
   return (
     <>
-      <section className="process section-py" id="process">
+      {/* <section className="process section-py" id="process"> */}
+      <section className="process section-py" id="about">
         <div className="container">
           <div className="process-content">
             <div className="supra-title" style={{ "--delay": "0s" }}>
@@ -112,10 +114,7 @@ const HowWeWork = () => {
               Lucrăm <span className="glow-text">simplu</span> și <span className="glow-text">transparent</span>
             </h2>
             <div className="description" style={{ "--delay": "0.3s" }}>
-              <p>
-                Ne dorim ca procesul să fie clar, eficient și lipsit de complicații. De la prima discuție până la implementare și suport, te ghidăm pas cu pas, astfel încât să ai control și
-                vizibilitate în fiecare etapă.
-              </p>
+              <p>Developero este o companie specializată în dezvoltare website, magazine online și infrastructură IT, care ajută companiile să își construiască și să își dezvolte prezența digitală într-un mod stabil, sigur și scalabil. Oferim soluții complete pentru mediul online, de la realizarea unui website modern sau a unui magazin online până la implementarea și administrarea infrastructurii tehnice care susține aceste proiecte.</p>
               <div className="btn-wrapper">
                 <a href="#contact" className="btn-full" data-service="other">
                   Contactează-ne

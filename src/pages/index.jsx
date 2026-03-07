@@ -5,7 +5,9 @@ import Hero from '../components/sections/Hero'
 import Web from '../components/sections/Web'
 import Infrastructure from '../components/sections/Infrastructure'
 import HowWeWork from '../components/sections/HowWeWork'
-import About from '../components/sections/About'
+import Portfolio from '../components/sections/Portfolio'
+import Team from '../components/sections/Team'
+// import About from '../components/sections/About'
 import Contact from '../components/sections/Contact'
 
 const IndexPage = () => {
@@ -16,8 +18,10 @@ const IndexPage = () => {
         <Hero />
         <Web />
         <Infrastructure />
+        <Team />
+        <Portfolio />
+        {/* <About /> */}
         <HowWeWork />
-        <About />
         <Contact />
       </main>
       <Footer />

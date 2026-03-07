@@ -112,7 +112,7 @@ const Contact = () => {
               onChange={handleChange}
             ></textarea>
             <button type="submit" className="btn-full" disabled={!isFormValid}>
-              Trimite cererea de ofertă
+              Cererea oferta
             </button>
           </form>
         </div>

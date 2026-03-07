@@ -129,3 +129,11 @@
   background: rgba(241, 245, 249, 0.15);
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .work-item {
+    padding: 20px;
+    opacity: 1;
+    transform: none;
+  }
+}
