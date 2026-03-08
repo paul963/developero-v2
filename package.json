@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://paul963.github.io/developero-v2",
+  "homepage": "https://dev.develope.ro",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -111,7 +111,6 @@ a {
 .btn-full,
 .btn-outline {
   padding: 14px 32px;
-  color: var(--secondary);
   font-weight: 500;
   border: 1px solid var(--secondary);
   border-radius: var(--border-radius);
@@ -122,6 +121,11 @@ a {
 .btn-full {
   background: var(--secondary);
   color: var(--primary);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--secondary);
 }
 
 .btn-full:hover,

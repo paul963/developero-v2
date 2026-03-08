@@ -15,9 +15,9 @@ const Portfolio = () => {
       const windowH = window.innerHeight;
 
       // progress 0 when wrapper enters viewport, 1 when it's 50% scrolled in
-      const progress = Math.max(0, Math.min(1, (windowH - rect.top - windowH * 0.2) / (windowH * 0.6)))
+      const progress = Math.max(0, Math.min(1, (windowH - rect.top - windowH * 0.1) / (windowH * 0.6)))
 
-      col1.style.transform = `translate(${-75 + progress * 75}%, ${-50 + progress * 50}%)`;
+      col1.style.transform = `translate(${-50 + progress * 50}%, ${-10 + progress * 10}%)`;
       col1.style.opacity = progress;
 
       col2.style.transform = `translate(${50 - progress * 50}%, ${10 - progress * 10}%)`;

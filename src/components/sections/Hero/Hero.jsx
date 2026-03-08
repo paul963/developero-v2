@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero">
           <div className="supra-title hero-animate" style={{ '--delay': '0s' }}>
-            Web Development &amp; IT Infrastructure
+            Web Development &amp; Infrastructură IT
           </div>
           <h1 className="text-center hero-animate" style={{ '--delay': '0.15s' }}>
             Expertiza <span className="glow-text">Web</span> &amp; <span className="glow-text">Infrastructură IT</span><br />
@@ -17,8 +17,8 @@ const Hero = () => {
             De la site-ul de prezentare până la infrastructura serverelor tale – construim, securizăm și monitorizăm tot.
           </p>
           <div className="action hero-animate" style={{ '--delay': '0.45s' }}>
-            <a href="#web" className="btn-full">Vezi serviciile</a>
-            <a href="#contact" className="btn-outline">Cere o ofertă</a>
+            <a href="#web" className="btn-full">Servicii</a>
+            <a href="#contact" className="btn-outline">Contact</a>
           </div>
         </div>
       </div>

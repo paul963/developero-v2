@@ -20,6 +20,10 @@
   gap: 15px;
 }
 
+.form * {
+  font-family: "Geist", sans-serif;
+}
+
 .form .grid-2 {
   padding-top: 0;
   padding-bottom: 0;
@@ -44,8 +48,7 @@
 }
 
 .form button {
-  padding: 10px 22px;
-  border-radius: var(--border-radius);
+  width: max-content;
 }
 
 .form button[disabled] {

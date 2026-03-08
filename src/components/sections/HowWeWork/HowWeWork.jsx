@@ -114,7 +114,7 @@ const HowWeWork = () => {
               Lucrăm <span className="glow-text">simplu</span> și <span className="glow-text">transparent</span>
             </h2>
             <div className="description" style={{ "--delay": "0.3s" }}>
-              <p>Developero este o companie specializată în dezvoltare website, magazine online și infrastructură IT, care ajută companiile să își construiască și să își dezvolte prezența digitală într-un mod stabil, sigur și scalabil. Oferim soluții complete pentru mediul online, de la realizarea unui website modern sau a unui magazin online până la implementarea și administrarea infrastructurii tehnice care susține aceste proiecte.</p>
+              <p>Suntem o echipă specializată în dezvoltare website, magazine online și infrastructură IT, care ajută companiile să își construiască și să își dezvolte prezența digitală într-un mod stabil, sigur și scalabil. Oferim soluții complete pentru mediul online, de la realizarea unui website modern sau a unui magazin online până la implementarea și administrarea infrastructurii tehnice.</p>
               <div className="btn-wrapper">
                 <a href="#contact" className="btn-full" data-service="other">
                   Contactează-ne

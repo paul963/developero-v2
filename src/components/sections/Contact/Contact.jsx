@@ -4,7 +4,6 @@ import './Contact.css'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
-    company: '',
     email: '',
     phone: '',
     service: '',
@@ -14,7 +13,6 @@ const Contact = () => {
   const selectRef = useRef(null)
 
   const isFormValid = formData.name.trim() !== '' &&
-    formData.company.trim() !== '' &&
     formData.email.trim() !== '' &&
     formData.phone.trim() !== '' &&
     formData.service !== ''
@@ -65,7 +63,6 @@ const Contact = () => {
               <input
                 name="company"
                 placeholder="Denumire Companie"
-                required
                 value={formData.company}
                 onChange={handleChange}
               />
