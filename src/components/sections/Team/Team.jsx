@@ -39,7 +39,7 @@ const Team = () => {
               <img src={`${base}assets/team/robert.webp`} />
             </div>
             <div className="member-content">
-              <p className="member-name">Rober</p>
+              <p className="member-name">Robert</p>
               <p className="member-position">Serveru e viata lui</p>
               <p className="member-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
