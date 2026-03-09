@@ -50,9 +50,6 @@
   transform-origin: top right;
   opacity: 0;
   pointer-events: none;
-  transition:
-    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.3s ease;
 }
 
 .nav-mobile.is-open {
@@ -97,8 +94,6 @@
   background: var(--primary);
   border-radius: 2px;
   transition:
-    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.3s ease;
   transform-origin: center;
 }
 
