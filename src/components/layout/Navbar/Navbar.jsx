@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const navLinks = [
+  { href: "/", label: "Acasă" },
   { href: "/#web", label: "Website" },
   { href: "/#infrastructure", label: "Infrastructură" },
   { href: "/#team", label: "Echipa" },

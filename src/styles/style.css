@@ -56,12 +56,15 @@ p {
   line-height: 1.3em;
 }
 
-.container.gdpr h1 {
-  margin-bottom: 30px;
+a {
+  color: var(--secondary);
 }
 
-.container.gdpr h3, .container.gdpr p {
-  margin-bottom: 16px;
+ul {
+  padding-bottom: 16px;
+  padding-left: 20px;
+  color: var(--grey);
+  line-height: 1.3em;
 }
 
 a {
@@ -95,11 +98,6 @@ a {
   padding: 0 20px;
 }
 
-.container.gdpr {
-  max-width: 60%;
-  padding: 120px 20px 60px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -112,18 +110,13 @@ a {
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .container.gdpr {
-    max-width: 100%;
-    padding-top: 80px;
   }
 }
 
@@ -200,4 +193,29 @@ img {
   width: 80%;
   height: 1px;
   background: linear-gradient(90deg, rgba(241, 245, 249, 0) 0%, rgb(241, 245, 249) 50%, rgba(241, 245, 249, 0) 100%);
+}
+
+.container.gdpr {
+  max-width: 60%;
+  padding: 120px 20px 60px;
+}
+
+.gdpr h1 {
+  padding-bottom: 30px;
+  font-size: 2.5em; 
+}
+
+.container.gdpr h3 {
+  padding: 8px 0 16px;
+}
+
+.container.gdpr p {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .container.gdpr {
+    max-width: 100%;
+    padding-top: 80px;
+  }
 }
