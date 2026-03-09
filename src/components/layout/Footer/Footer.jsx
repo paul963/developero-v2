@@ -27,8 +27,8 @@ const Footer = () => {
             </p>
           </div>
           <div className="footer-links">
-            <a href="#"> Termeni și condiții</a>
-            <a href="#"> Politica Cookies</a>
+            <a href="/termeni-si-conditii">Termeni și Condiții</a>
+            <a href="/politica-cookies"> Politica Cookies</a>
           </div>
         </div>
       </div>

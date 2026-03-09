@@ -10,15 +10,14 @@ const Hero = () => {
             Web Development &amp; Infrastructură IT
           </div>
           <h1 className="text-center hero-animate" style={{ '--delay': '0.15s' }}>
-            Expertiza <span className="glow-text">Web</span> &amp; <span className="glow-text">Infrastructură IT</span><br />
-            pentru afacerea ta
+            Your Stack, <span className="glow-text">Our Problem</span>
           </h1>
           <p className="text-center hero-animate" style={{ '--delay': '0.3s' }}>
-            De la site-ul de prezentare până la infrastructura serverelor tale – construim, securizăm și monitorizăm tot.
+            De la website-uri la infrastructură IT – construim, securizăm, monitorizăm.
           </p>
           <div className="action hero-animate" style={{ '--delay': '0.45s' }}>
-            <a href="#web" className="btn-full">Servicii</a>
-            <a href="#contact" className="btn-outline">Contact</a>
+            <a href="#web" className="btn-full">Vezi servicii</a>
+            <a href="#contact" className="btn-outline">Cere oferta</a>
           </div>
         </div>
       </div>

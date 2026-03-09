@@ -8,7 +8,7 @@
 }
 
 /* ===== Base ===== */
-* {
+body * {
   transition: 0.3s;
 }
 
@@ -56,6 +56,14 @@ p {
   line-height: 1.3em;
 }
 
+.container.gdpr h1 {
+  margin-bottom: 30px;
+}
+
+.container.gdpr h3, .container.gdpr p {
+  margin-bottom: 16px;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -87,6 +95,11 @@ a {
   padding: 0 20px;
 }
 
+.container.gdpr {
+  max-width: 60%;
+  padding: 120px 20px 60px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -104,6 +117,13 @@ a {
   }
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container.gdpr {
+    max-width: 100%;
+    padding-top: 80px;
   }
 }
 
