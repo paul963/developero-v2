@@ -142,31 +142,20 @@ const HowWeWork = () => {
           </div>
         </div>
       </section>
+
       <section className="how-we-work section-py" ref={sectionRef}>
         <div className="container">
           <div className="grid grid-3">
             <div className="grid-item work-item bg-dark">
               <svg width="1em" height="1em" className="w-10 h-10" data-icon="lucide:message-circle">
                 <symbol id="ai:lucide:message-circle" viewBox="0 0 24 24">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092a10 10 0 1 0-4.777-4.719"
-                  ></path>
+                  <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092a10 10 0 1 0-4.777-4.719" ></path>
                 </symbol>
                 <use href="#ai:lucide:message-circle"></use>
               </svg>
-              <h3>Spune-ne ce ai nevoie</h3>
-              <p>
-                Totul începe cu tine. Ne descrii proiectul, obiectivele și cerințele tale — fie că este vorba despre o infrastructură nouă, optimizarea uneia existente sau o soluție personalizată.
-              </p>
-              <p>
-                Analizăm informațiile primite și, dacă este necesar, revenim rapid cu întrebări de clarificare pentru a înțelege în detaliu contextul, bugetul și termenele dorite. Scopul nostru este
-                să propunem o soluție corect dimensionată, adaptată nevoilor reale.
-              </p>
+              <h3>Descoperim nevoiele</h3>
+              <p>Poți să ne contactezi prin formularul de contact sau telefonic. Ne povestești despre proiectul tău, ce vrei să realizezi și ce obiective ai.</p>
+              <p>Fie că este vorba despre un website, un magazin online sau un proiect de infrastructură, putem la punct toate detaliile necesare.</p>
             </div>
             <div className="grid-item work-item bg-dark">
               <svg width="1em" height="1em" className="w-10 h-10" data-icon="lucide:file-text">
@@ -178,15 +167,9 @@ const HowWeWork = () => {
                 </symbol>
                 <use href="#ai:lucide:file-text"></use>
               </svg>
-              <h3>Primești o ofertă personalizată</h3>
-              <p>
-                Pe baza discuției inițiale, îți pregătim o ofertă clară, detaliată și adaptată exact nevoilor tale. Analizăm atent cerințele, contextul tehnic și obiectivele proiectului pentru a
-                propune o soluție eficientă și sustenabilă.
-              </p>
-              <p>
-                Oferta este transmisă fără obligații și include informații transparente despre costuri, etape de implementare și termene realiste de livrare. Îți explicăm fiecare componentă a
-                propunerii, astfel încât să ai o imagine completă asupra investiției și rezultatelor așteptate.
-              </p>
+              <h3>Oferta personalizată</h3>
+              <p>Pe baza discuției, îți trimitem o ofertă personalizată, adaptată cerințelor tale.</p>
+              <p>Vei primi o prezentare clară a soluției propuse, costurile, etapele proiectului și termenul de livrare, astfel încât să știi exact la ce să te aștepți.</p>
             </div>
             <div className="grid-item work-item bg-dark">
               <svg width="1em" height="1em" className="w-10 h-10" data-icon="lucide:rocket">
@@ -198,11 +181,9 @@ const HowWeWork = () => {
                 </symbol>
                 <use href="#ai:lucide:rocket"></use>
               </svg>
-              <h3>Livrăm și asigurăm suport</h3>
-              <p>După acceptarea ofertei, trecem la implementare. Respectăm planul agreat, comunicăm constant progresul și ne asigurăm că soluția funcționează optim.</p>
-              <p>
-                La final, nu rămâi singur. Oferim mentenanță, monitorizare și suport tehnic conform pachetului ales, astfel încât infrastructura ta să fie stabilă, sigură și pregătită pentru creștere.
-              </p>
+              <h3>Implementare și suport</h3>
+              <p>După acceptarea ofertei, începem dezvoltarea și implementarea proiectului. Perioadic vei primi actualizări despre progresul proiectului.</p>
+              <p>La final, îți oferim suport și mentenanță, astfel încât soluția ta să funcționeze stabil și să poată crește odată cu afacerea ta.</p>
             </div>
           </div>
         </div>

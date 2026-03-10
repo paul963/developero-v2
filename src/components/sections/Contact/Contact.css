@@ -4,7 +4,7 @@
 }
 
 .contact .description {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .form-wrapper {
@@ -59,10 +59,6 @@
 @media (max-width: 768px) {
   .contact .container {
     max-width: 100%;
-  }
-
-  .contact .description {
-    padding-bottom: 30px;
   }
 
   .form-wrapper {

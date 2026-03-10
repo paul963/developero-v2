@@ -46,9 +46,9 @@ const Contact = () => {
     <section className="contact section-py" id="contact">
       <div className="container">
         <div className="supra-title">Contact</div>
-        <h2 className="text-center">Hai să discutăm</h2>
+        <h2 className="text-center">Formular de contact</h2>
         <p className="text-center description">
-          Ai întrebări despre serviciile noastre sau vrei o ofertă? Trimite-ne un mesaj și îți răspundem în cel mai scurt timp.
+          Ai întrebări despre serviciile noastre sau vrei o ofertă? Trimite-ne un mesaj și revenim  cu un răspuns.
         </p>
         <div className="form-wrapper bg-dark">
           <form className="form" onSubmit={handleSubmit}>
@@ -109,7 +109,7 @@ const Contact = () => {
               onChange={handleChange}
             ></textarea>
             <button type="submit" className="btn-full" disabled={!isFormValid}>
-              Cererea oferta
+              Cerere oferta
             </button>
           </form>
         </div>
