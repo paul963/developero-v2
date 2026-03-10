@@ -1,0 +1,25 @@
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-wrapper {
+  padding: 100px;
+  background: var(--dark);
+  border-radius: var(--border-radius);
+}
+
+.not-found-wrapper h1 {
+  font-size: 6em; 
+}
+
+.not-found-wrapper p {
+  padding-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .not-found {
+  }
+}

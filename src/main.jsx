@@ -5,6 +5,7 @@ import App from './App.jsx'
 import TermsConditions from './pages/TermsConditions.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import CookiesPolicy from './pages/CookiesPolicy.jsx'
+import NotFound from './pages/404.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/termeni-conditii" element={<TermsConditions />} />
         <Route path="/politica-confidentialitate" element={<PrivacyPolicy />} />
         <Route path="/politica-cookies" element={<CookiesPolicy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
   </BrowserRouter>

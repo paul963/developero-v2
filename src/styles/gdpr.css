@@ -1,0 +1,25 @@
+.gdpr {
+  max-width: 60%;
+  margin: auto;
+  padding: 120px 20px 60px;
+}
+
+.gdpr h1 {
+  padding-bottom: 30px;
+  font-size: 2.5em; 
+}
+
+.gdpr h3 {
+  padding: 8px 0 16px;
+}
+
+.gdpr p {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .gdpr {
+    max-width: 100%;
+    padding-top: 80px;
+  }
+}

@@ -194,28 +194,3 @@ img {
   height: 1px;
   background: linear-gradient(90deg, rgba(241, 245, 249, 0) 0%, rgb(241, 245, 249) 50%, rgba(241, 245, 249, 0) 100%);
 }
-
-.container.gdpr {
-  max-width: 60%;
-  padding: 120px 20px 60px;
-}
-
-.gdpr h1 {
-  padding-bottom: 30px;
-  font-size: 2.5em; 
-}
-
-.container.gdpr h3 {
-  padding: 8px 0 16px;
-}
-
-.container.gdpr p {
-  padding-bottom: 16px;
-}
-
-@media (max-width: 768px) {
-  .container.gdpr {
-    max-width: 100%;
-    padding-top: 80px;
-  }
-}
