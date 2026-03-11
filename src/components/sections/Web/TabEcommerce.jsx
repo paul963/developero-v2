@@ -4,21 +4,21 @@ const webPackages = [
   {
     title: "Launch",
     description: "Un proiect mic in lumea E-Commerce, dar un proiect mare pentru tine.",
-    price: "2.500€",
+    price: "1.900€",
     features: ["Consultanță pentru platformei potrivite.", "Configurare inițială a magazinului.", "Import produse.", "Configurare SEO inițial."],
     highlight: false,
   },
   {
     title: "Grow",
     description: "Perfect pentru magazinele care doresc integrări si funcționalități suplimentare.",
-    price: "2.800€",
+    price: "2.300€",
     features: ["Căutare avansată produse.", "SEO avansat și tracking.", "Backup lunar al datelor.", "BONUS 2 luni mentenanță gratuită."],
     highlight: true,
   },
   {
     title: "Scale",
     description: "Conceput pentru scalarea magazinului online prin încredere și securitate.",
-    price: "3.200€",
+    price: "2.800€",
     features: ["Chat AI.", "Securitate de nivel înalt.", "Monitorizare parametrii suplimentari.", "BONUS 3 luni mentenanță gratuită."],
     highlight: false,
   },
@@ -89,7 +89,7 @@ const TabEcommerce = () => {
             </thead>
             <tbody>
               <tr>
-                <td>Implementare website</td>
+                <td>Configurare și implementare magazin online</td>
                 <td><CheckIcon /></td>
                 <td><CheckIcon /></td>
                 <td><CheckIcon /></td>

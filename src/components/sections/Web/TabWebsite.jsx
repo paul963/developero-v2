@@ -12,14 +12,14 @@ const webPackages = [
     title: "Business",
     description: "Destinat site-urilor pentru mai mult control si securitate avansată.",
     price: "1.500€",
-    features: ["Securitate avansată.", "Integrare Newsletter.", "BONUS 2 luni mentenanță gratuită."],
+    features: ["Configurare server Cloudflare.", "Integrare Newsletter.", "BONUS 2 luni mentenanță gratuită."],
     highlight: true,
   },
   {
     title: "Pro",
     description: "Conceput pentru scalabilitate, infrastructură dedicată și integrare AI.",
     price: "1.800€",
-    features: ["Monitorizare uptime 24/7.", "Configurare server Cloudflare.", "BONUS 3 luni mentenanță gratuită."],
+    features: ["Monitorizare uptime 24/7.", "Securitate avansată.", "BONUS 3 luni mentenanță gratuită."],
     highlight: false,
   },
 ];
@@ -127,6 +127,12 @@ const TabWebsite = () => {
               <tr>
                 <td>Backup lunar</td>
                 <td><CheckIcon /></td>
+                <td><CheckIcon /></td>
+                <td><CheckIcon /></td>
+              </tr>
+              <tr>
+                <td>Configurare blog</td>
+                <td className="none">-</td>
                 <td><CheckIcon /></td>
                 <td><CheckIcon /></td>
               </tr>

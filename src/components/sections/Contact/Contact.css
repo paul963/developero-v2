@@ -47,7 +47,48 @@
   border-color: rgba(241, 245, 249, 0.5);
 }
 
+.form label {
+  color: var(--secondary);
+}
+
+.form .acceptance {
+  position: relative;
+  display: flex;
+  gap: 15px;
+}
+
+.form .acceptance a {
+  text-decoration: underline;
+}
+
+.form input[type="checkbox"] {
+  opacity: 0;
+}
+
+.form .checkbox {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(241, 245, 249, 0.15);
+  border-radius: 5px;
+}
+
+.form input:checked + .checkbox {
+  top: 0;
+  left: 8px;
+  width: 8px;
+  height: 15px;
+  transform: rotate(45deg);
+  border-width: 0 1px 1px 0;
+  border-color: rgba(241, 245, 249, 0.5);
+  border-radius: 0px;
+  transition: left .3s, width .3s, height .3s, transform .3s, border-color .3s;
+}
+
 .form button {
+  margin-top: 10px;
   width: max-content;
 }
 

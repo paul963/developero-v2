@@ -5,6 +5,8 @@ const base = import.meta.env.BASE_URL;
 
 const Portfolio = () => {
   useEffect(() => {
+    if (window.innerWidth <= 768) return
+    
     const wrapper = document.querySelector(".portfolio-wrapper");
     const col1 = document.querySelector(".portfolio-col.col-1");
     const col2 = document.querySelector(".portfolio-col.col-2");
