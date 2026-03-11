@@ -34,9 +34,8 @@ const Portfolio = () => {
         <div className="portfolio-content">
           <div className="supra-title">Portfolio</div>
           <h2 className="text-center">
-            Dezvoltăm <span className="glow-text">branduri</span> extraordinare
+          Estetică. <span className="glow-text">Stabilitate.</span>
           </h2>
-          <p className="text-center description">Derulați pentru a vedea unele dintre proiectele la care suntem mândri că am participat.</p>
         </div>
 
         <div className="portfolio-wrapper">
