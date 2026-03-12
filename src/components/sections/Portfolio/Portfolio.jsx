@@ -16,7 +16,6 @@ const Portfolio = () => {
       const rect = wrapper.getBoundingClientRect();
       const windowH = window.innerHeight;
 
-      // progress 0 when wrapper enters viewport, 1 when it's 50% scrolled in
       const progress = Math.max(0, Math.min(1, (windowH - rect.top - windowH * 0.1) / (windowH * 0.6)))
 
       col1.style.transform = `translate(${-50 + progress * 50}%, ${-10 + progress * 10}%)`;
@@ -37,12 +36,12 @@ const Portfolio = () => {
         <div className="portfolio-content">
           <div className="supra-title">Portfolio</div>
           <h2 className="text-center">
-            Dezvoltăm <span className="glow-text">branduri</span> extraordinare
+          Estetică. <span className="glow-text">Stabilitate.</span>
           </h2>
-          <p className="text-center description">Derulați pentru a vedea unele dintre proiectele la care suntem mândri că am participat.</p>
         </div>
 
         <div className="portfolio-wrapper">
+          {/* COLOANA 1: PASTRATA ORIGINAL (Design/Web) */}
           <div className="portfolio-col col-1">
             <div className="portfolio-item">
               <div className="portfolio-title">
@@ -60,7 +59,7 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/portfolio-1.webp`} />
+                <img src={`${base}assets/portfolio/portfolio-1.webp`} alt="Web Project 1" />
               </div>
             </div>
             <div className="portfolio-item">
@@ -79,7 +78,7 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/portfolio-2.webp`} />
+                <img src={`${base}assets/portfolio/portfolio-2.webp`} alt="Web Project 2" />
               </div>
             </div>
             <div className="portfolio-item">
@@ -98,60 +97,65 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/portfolio-3.webp`} />
+                <img src={`${base}assets/portfolio/portfolio-3.webp`} alt="Web Project 3" />
               </div>
             </div>
           </div>
+
+          {/* COLOANA 2: ACTUALIZATA (Infrastructura IT) */}
           <div className="portfolio-col col-2">
             <div className="portfolio-item">
               <div className="portfolio-title">
-                <h3>Test</h3>
+                <h3>Virtualizare & Redundanță</h3>
               </div>
               <div className="portfolio-description">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.</p>
+                <p>
+                  Transformăm serverele fizice într-o infrastructură flexibilă și sigură. Implementăm soluții care elimină riscul de întrerupere a activității în cazul defecțiunilor hardware.
+                </p>
               </div>
               <div className="portfolio-about">
                 <p>
-                  <span>Servicii oferite:</span> Tempor incididunt, Labore dolore, Magna aliqua, Enim minim
+                  <span>Beneficii:</span> Uptime garantat, Eficiență, Consolidare hardware.
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/portfolio-4.webp`} />
+                <img src={`${base}assets/portfolio/infra-proxmox.png`} alt="Virtualizare Proxmox" />
               </div>
             </div>
             <div className="portfolio-item">
               <div className="portfolio-title">
-                <h3>Test</h3>
+                <h3>Conectivitate Securizată</h3>
               </div>
               <div className="portfolio-description">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.
+                  Securizăm accesul angajaților remote și interconectăm sediile firmei prin rețele private protejate, asigurând un flux de date sigur și criptat.
                 </p>
               </div>
               <div className="portfolio-about">
                 <p>
-                  <span>Servicii oferite:</span> Tempor incididunt, Labore dolore, Magna aliqua, Enim minim
+                  <span>Beneficii:</span> Remote Work sigur, Protecție date, VPN profesional.
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/portfolio-5.webp`} />
+                <img src={`${base}assets/portfolio/infra-networking.png`} alt="Networking VPN" />
               </div>
             </div>
             <div className="portfolio-item">
               <div className="portfolio-title">
-                <h3>Test</h3>
+                <h3>Siguranță & Monitorizare</h3>
               </div>
               <div className="portfolio-description">
-                <p>Excepteur sint occaecat officia deserunt mollit anim id est laborum.</p>
+                <p>
+                  Supraveghem sănătatea sistemelor 24/7 și intervenim automat. Strategiile noastre de backup garantează recuperarea rapidă a informațiilor vitale ale firmei.
+                </p>
               </div>
               <div className="portfolio-about">
                 <p>
-                  <span>Servicii oferite:</span> Tempor incididunt, Labore dolore, Magna aliqua, Enim minim
+                  <span>Beneficii:</span> Zero pierderi de date, Alertare rapidă, Liniște operațională.
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/portfolio-6.webp`} />
+                <img src={`${base}assets/portfolio/infra-monitoring.png`} alt="Monitorizare si Backup" />
               </div>
             </div>
           </div>
