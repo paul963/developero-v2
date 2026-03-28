@@ -1,53 +1,99 @@
-.infrastructure .grid {
-  gap: 0;
+/* ===== Infrastructure Grid ===== */
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  max-width: 960px;
+  margin: 0 auto 52px;
+  border: 1px solid rgba(241, 245, 249, 0.08);
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
-.infrastructure-content {
-  padding: 30px;
-  border: 1px solid rgba(241, 245, 249, 0.15);
+@media (max-width: 640px) {
+  .infra-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+/* ===== Card ===== */
+
+.infra-card {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  transform: scale(0);
+  padding: 32px 28px;
+  background: var(--dark);
+  border: 1px solid rgba(241, 245, 249, 0.06);
+
   opacity: 0;
+  transform: translateY(20px);
   transition:
-    transform 2s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 2s ease;
+    opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
-.infrastructure-content.visible {
-  transform: scale(1);
+.infra-card.visible {
   opacity: 1;
+  transform: translateY(0);
 }
 
-.infrastructure-content .icon {
-  padding: 5px;
-  border-radius: 10px;
-  background: var(--grey);
+.infra-card.visible:hover {
+  background: rgba(17, 17, 18, 0.8);
+  border-color: rgba(241, 245, 249, 0.12);
 }
 
-.infrastructure-content:hover .icon {
-  background: var(--secondary);
-}
+/* ===== Icon ===== */
 
-.infrastructure-content .icon svg {
-  width: 30px;
-  height: 30px;
-  fill: var(--secondary);
+.infra-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--secondary);
+  margin-top: 2px;
 }
 
-.infrastructure-content h3 {
-  padding-bottom: 4px;
-  font-weight: 400;
+.infra-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== Body ===== */
+
+.infra-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infra-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary);
+  line-height: 1.3;
+}
+
+.infra-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--grey);
+}
+
+/* ===== CTA ===== */
+
+.infra-action {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-  .infrastructure-content {
-    flex-direction: column;
-  }
-
-  .infrastructure-content .icon {
-    background: var(--secondary);
+  .infra-card {
+    padding: 24px 20px;
   }
 }
