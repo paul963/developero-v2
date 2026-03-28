@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
         <h1>Politica de Confidențialitate</h1>
         <h3>Introducere</h3>
         <p>
-          Această Politică de Confidențialitate descrie modul în care Developeror ("noi", "compania") colectează, utilizează și protejează datele cu caracter personal ale utilizatorilor care vizitează
-          site-ul developeror.ro.
+          Această Politică de Confidențialitate descrie modul în care develope.ro ("noi", "compania") colectează, utilizează și protejează datele cu caracter personal ale utilizatorilor care vizitează
+          site-ul develope.ro.
         </p>
         <p>Respectăm confidențialitatea datelor dumneavoastră și ne angajăm să protejăm informațiile personale în conformitate cu Regulamentul (UE) 2016/679 privind protecția datelor (gdpr).</p>
         <p>Prin utilizarea acestui site, sunteți de acord cu practicile descrise în această politică.</p>
