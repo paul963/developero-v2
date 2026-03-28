@@ -119,7 +119,7 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/infra-proxmox.png`} alt="Virtualizare Proxmox" />
+                <img src={`${base}assets/portfolio/infra-proxmox.webp`} alt="Virtualizare Proxmox" />
               </div>
             </div>
             <div className="portfolio-item">
@@ -137,7 +137,7 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/infra-networking.png`} alt="Networking VPN" />
+                <img src={`${base}assets/portfolio/infra-networking.webp`} alt="Networking VPN" />
               </div>
             </div>
             <div className="portfolio-item">
@@ -155,7 +155,7 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="portfolio-image">
-                <img src={`${base}assets/portfolio/infra-monitoring.png`} alt="Monitorizare si Backup" />
+                <img src={`${base}assets/portfolio/infra-monitoring.webp`} alt="Monitorizare si Backup" />
               </div>
             </div>
           </div>

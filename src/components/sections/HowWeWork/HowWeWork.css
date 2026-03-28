@@ -17,7 +17,9 @@
   padding-top: 60px;
 }
 
-.process .supra-title, .process h2, .process p {
+.process .supra-title,
+.process h2,
+.process p {
   opacity: 0;
 }
 
@@ -52,14 +54,42 @@
   filter: grayscale(0);
 }
 
-.process-carousel .scroll-up.slow {
+.process-carousel .scroll-up {
   animation: scrollUp 60s linear infinite;
 }
-.process-carousel .scroll-up.fast {
-  animation: scrollUp 60s linear infinite;
-}
-.process-carousel .scroll-down.normal {
+
+.process-carousel .scroll-down {
   animation: scrollDown 60s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .process .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .process .process-content {
+    width: 100%;
+  }
+
+  .process-carousel {
+    width: 100%;
+    height: auto;
+    flex-direction: column;-webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  }
+
+  .process-carousel .carousel-col {
+    flex-direction: row;
+  }
+
+  .process-carousel .scroll-up {
+    animation: scrollRight 60s linear infinite;
+  }
+
+  .process-carousel .scroll-down {
+    animation: scrollLeft 60s linear infinite;
+  }
 }
 
 @keyframes scrollUp {
@@ -80,15 +110,21 @@
   }
 }
 
-@media (max-width: 768px) {
-  .process .container {
-    flex-direction: column;
-    gap: 60px;
+@keyframes scrollRight {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-500%);
+  }
+}
 
-  .process .process-content,
-  .process-carousel {
-    width: 100%;
+@keyframes scrollLeft {
+  from {
+    transform: translateX(-500%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 

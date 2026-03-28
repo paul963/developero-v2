@@ -51,11 +51,13 @@ const Navbar = () => {
             <span></span>
           </button>
           <div className={`nav-mobile ${open ? "is-open" : ""}`}>
-            {navLinks.map(({ href, label }) => (
-              <a key={href} href={href} onClick={(e) => handleNavClick(e, href)}>
-                {label}
-              </a>
-            ))}
+            <div className="nav-mobile-wrapper">
+              {navLinks.map(({ href, label }) => (
+                <a key={href} href={href} onClick={(e) => handleNavClick(e, href)}>
+                  {label}
+                </a>
+              ))}
+            </div>
           </div>
         </nav>
       ) : (

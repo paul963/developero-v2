@@ -124,17 +124,17 @@ const HowWeWork = () => {
           </div>
 
           <div className="process-carousel">
-            <div className="carousel-col scroll-up slow">
+            <div className="carousel-col scroll-up">
               {col1.map((src, i) => (
                 <img key={i} src={src} />
               ))}
             </div>
-            <div className="carousel-col scroll-down normal">
+            <div className="carousel-col scroll-down">
               {col2.map((src, i) => (
                 <img key={i} src={src} />
               ))}
             </div>
-            <div className="carousel-col scroll-up fast">
+            <div className="carousel-col scroll-up">
               {col3.map((src, i) => (
                 <img key={i} src={src} />
               ))}
