@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dev.developero.ro/sitemap.xml
+Sitemap: https://dev.develope.ro/sitemap.xml
