@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero">
           <div className="supra-title hero-animate" style={{ '--delay': '0s' }}>
-            Web Development &amp; Infrastructură IT
+            Soluții Digitale End-to-End
           </div>
           <h1 className="text-center hero-animate" style={{ '--delay': '0.15s' }}>
             Your Stack, <span className="glow-text">Our Solution</span>
