@@ -4,9 +4,9 @@ import "./HowWeWork.css";
 const base = import.meta.env.BASE_URL;
 
 // Image carousel
-const col1Images = [`${base}assets/logo/html.png`, `${base}assets/logo/css.png`, `${base}assets/logo/js.png`, `${base}assets/logo/bootstrap.png`, `${base}assets/logo/wordpress.png`, `${base}assets/logo/shopify.png`];
-const col2Images = [`${base}assets/logo/react.png`, `${base}assets/logo/node.png`, `${base}assets/logo/cisco.png`, `${base}assets/logo/cloudflare.png`, `${base}assets/logo/linux.png`, `${base}assets/logo/nginx.png`];
-const col3Images = [`${base}assets/logo/docker.png`, `${base}assets/logo/kubernetes.png`, `${base}assets/logo/tailscale.png`, `${base}assets/logo/wireguard.png`, `${base}assets/logo/openvpn.png`, `${base}assets/logo/grafana.png`];
+const col1Images = [`${base}assets/logos/html.png`, `${base}assets/logos/css.png`, `${base}assets/logos/js.png`, `${base}assets/logos/bootstrap.png`, `${base}assets/logos/wordpress.png`, `${base}assets/logos/shopify.png`];
+const col2Images = [`${base}assets/logos/react.png`, `${base}assets/logos/node.png`, `${base}assets/logos/cisco.png`, `${base}assets/logos/cloudflare.png`, `${base}assets/logos/linux.png`, `${base}assets/logos/nginx.png`];
+const col3Images = [`${base}assets/logos/docker.png`, `${base}assets/logos/kubernetes.png`, `${base}assets/logos/tailscale.png`, `${base}assets/logos/wireguard.png`, `${base}assets/logos/openvpn.png`, `${base}assets/logos/grafana.png`];
 const col1 = [...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images, ...col1Images];
 const col2 = [...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images, ...col2Images];
 const col3 = [...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images, ...col3Images];
@@ -126,17 +126,17 @@ const HowWeWork = () => {
           <div className="process-carousel">
             <div className="carousel-col scroll-up">
               {col1.map((src, i) => (
-                <img key={i} src={src} />
+                <img key={i} src={src} alt={src.split('/').pop().split('.')[0]} />
               ))}
             </div>
             <div className="carousel-col scroll-down">
               {col2.map((src, i) => (
-                <img key={i} src={src} />
+                <img key={i} src={src} alt={src.split('/').pop().split('.')[0]} />
               ))}
             </div>
             <div className="carousel-col scroll-up">
               {col3.map((src, i) => (
-                <img key={i} src={src} />
+                <img key={i} src={src} alt={src.split('/').pop().split('.')[0]} />
               ))}
             </div>
           </div>

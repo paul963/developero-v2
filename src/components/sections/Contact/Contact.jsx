@@ -70,8 +70,8 @@ const Contact = () => {
             <textarea name="message" placeholder="Mesajul tău..." rows="5" value={formData.message} onChange={handleChange}></textarea>
             <div className="acceptance">
               <input type="checkbox" id="policy" required value={formData.policy}/>
-              <span class="checkbox"></span>
-              <label for="policy">Sunt de acord cu <a href="/politica-confidentialitate" target="_blank">politica de confidențialitate</a>.</label>
+              <span className="checkbox"></span>
+              <label htmlFor="policy">Sunt de acord cu <a href="/politica-confidentialitate" target="_blank">politica de confidențialitate</a>.</label>
             </div>
             <button type="submit" className="btn-full" disabled={!isFormValid}>
               Cerere oferta

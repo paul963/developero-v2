@@ -8,7 +8,9 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="footer-top">
-          <div className="logo">DEVELOPERO</div>
+          <div className="footer-logo">
+            <a href="/"><img src="../../../assets/developero-logo.webp" alt="Developero" /></a>
+          </div>
           <div className="footer-menu">
             <p className="footer-menu-title">Link-uri utile</p>
             <p><a href="/termeni-conditii">Termeni și Condiții</a></p>
@@ -23,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <div className="footer-copy">
-            <p>
+            <p className="text-center">
               © <span id="year">{year}</span> Developero
             </p>
           </div>

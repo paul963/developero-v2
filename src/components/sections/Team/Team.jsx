@@ -36,7 +36,7 @@ const Team = () => {
         <div className="grid grid-3">
           <div className="team-member">
             <div className="member-image">
-              <img src={`${base}assets/team/robert.webp`} />
+              <img src={`${base}assets/team/robert.webp`} alt="Robert" />
             </div>
             <div className="member-content">
               <p className="member-name">Robert</p>
@@ -48,7 +48,7 @@ const Team = () => {
           </div>
           <div className="team-member">
             <div className="member-image">
-              <img src={`${base}assets/team/bogdan.webp`} />
+              <img src={`${base}assets/team/bogdan.webp`} alt="Bogdan" />
             </div>
             <div className="member-content">
               <p className="member-name">Bogdan</p>
@@ -60,7 +60,7 @@ const Team = () => {
           </div>
           <div className="team-member">
             <div className="member-image">
-              <img src={`${base}assets/team/paul.webp`} />
+              <img src={`${base}assets/team/paul.webp`} alt="Paul" />
             </div>
             <div className="member-content">
               <p className="member-name">Paul</p>
