@@ -183,6 +183,7 @@
 .compare-package .compare-btn {
   width: auto;
   padding: 10px 32px;
+  cursor: pointer;
 }
 
 .table-wrapper {

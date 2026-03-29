@@ -74,9 +74,9 @@ const TabWebsite = () => {
       </div>
 
       <div className="compare-package">
-        <a className="btn-outline compare-btn" onClick={() => setOpen(!open)}>
+        <div className="btn-outline compare-btn" onClick={() => setOpen(!open)}>
           {open ? 'Închide' : 'Compară pachete'}
-        </a>
+        </div>
         <div className="table-wrapper" ref={tableRef}>
           <table className="compare-table">
             <thead>

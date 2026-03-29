@@ -40,7 +40,7 @@ const Team = () => {
             </div>
             <div className="member-content">
               <p className="member-name">Robert</p>
-              <p className="member-position">Serveru e viata lui</p>
+              <p className="member-position">Serverul e viata lui</p>
               <p className="member-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
               </p>
@@ -52,7 +52,7 @@ const Team = () => {
             </div>
             <div className="member-content">
               <p className="member-name">Bogdan</p>
-              <p className="member-position">E pe servere</p>
+              <p className="member-position">Trăiește în SSH</p>
               <p className="member-description">
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.
               </p>
